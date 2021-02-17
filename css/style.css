@@ -661,7 +661,7 @@ margin-bottom: 1.5rem;
   margin-left: 15px; }
 
 .spa-wrapper {
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   padding: 20px 0; }
   .spa-wrapper::after {
     clear: both;
@@ -670,13 +670,23 @@ margin-bottom: 1.5rem;
 
 .spa-title {
   font-weight: bold;
-  margin-bottom: 0.2rem; }
+  margin-bottom: 12px;
+  font-size: 22px;}
 
 
 .spa-info {
-  margin-bottom: 0.2rem;
+  margin-bottom: 10px;
   font-size: 16px;
+  display: flex;
+  align-content: center;
+  line-height:20px;
+  
   }
+  
+.spa-info a {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}  
 
 .spa-price {
   color: #2498b1;
@@ -747,7 +757,7 @@ footer a {
   float: left;
   max-height: 100px; }
 
-@media only screen and (max-width: 356px) {
+@media only screen and (max-width: 364px) {
 .spa-imageswr img {
 	  display:none;
 	 }
@@ -762,34 +772,12 @@ a .spa-title {
 
 }
 
-@media screen and (max-width: 650px) {
-#callnowbutton{
-    display: block;
-    position: fixed;
-    text-decoration: none;
-    z-index: 2147483647;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    height: 44px;
-    border-top: 1px solid #2dc62d;
-    border-bottom: 1px solid #006700;
-    text-shadow: 0 1px #006700;
-    text-align: center;
-    color: #fff;
-    font-weight: 600;
-    font-size: 100%;
-    overflow: hidden;
-    padding-right: 20px;
-    background: #009900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}}
 
-@media screen and (min-width: 651px) {
-#callnowbutton{
-    display: none;
+
+@media screen and (max-width: 420px) {
+.spa-imageswr a img {
+    width: 70px;
+	height: 70px;
 }}
 
 .crta {
@@ -803,4 +791,29 @@ blockquote {
 	padding-left: 10px;
 	margin-bottom: 30px;
 	font-style: italic;
+}
+svg {
+	height: 20px;
+	line-height: 20px;
+	margin-right: 10px;
+}
+
+
+.add-button {
+    color: #fff!important;
+    background-color: #5c6ac0;
+    background-clip: border-box;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border-radius: 5px;
+    padding: 12px 20px;
+    transition: 0.25s;
+    text-decoration: none!important;
+}
+
+
+.add-button:hover {
+  box-shadow: 0 .35rem .75rem 0.0375rem rgba(0,0,0,.075) !important;
+  background-color: #4151ad;
+
+  /* cursor: pointer; */
 }
