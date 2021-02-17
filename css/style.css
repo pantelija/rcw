@@ -817,3 +817,22 @@ svg {
 
   /* cursor: pointer; */
 }
+
+
+
+
+a.pill {
+	
+	text-decoration: none;
+	display: flex;
+	margin-right: 15px;
+	margin-bottom: 20px;
+    align-content: center;
+    line-height: 20px;
+	width:100%;
+	font-size:16px;
+}
+
+.activated {
+	color: #33414a!important;
+}
